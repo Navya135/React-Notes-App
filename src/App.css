@@ -1,0 +1,133 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.add-note-container {
+  flex: 1;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: floralwhite;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.add-note-container input,
+.add-note-container textarea,
+.add-note-container select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-note-container select {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.notes-container {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  max-width: 900px;
+}
+
+.note-card {
+  width: 250px;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.note-card p {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.note-card button {
+  cursor: pointer;
+  padding: 8px 16px;
+  margin-top: 10px;
+  background-color: darkslategray;
+  margin-right: 20px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.note-card button.edit-btn {
+  background-color: #ffc107;
+  color: #333;
+  margin-right: 10px;
+}
+
+.note-card button.delete-btn {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.note-card.low {
+  background-color: #E23D28;
+}
+
+.note-card.medium {
+  background-color: #8cc751;
+  color: #155724;
+}
+
+.note-card.high {
+  background-color: #FFD700;
+  color: #721c24;
+}
+
+.note-card.editing {
+  border: 2px solid #007bff;
+  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+}
